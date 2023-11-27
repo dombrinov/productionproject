@@ -7,7 +7,10 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
-    // "baseUrl": ".", //для абсолютного пути в импортах
+    "baseUrl": ".", //для абсолютного пути в импортах
+    "paths": {
+      "*": ["./src/*"]
+    },
     "esModuleInterop": true, //позволяет работать с импортами и эскпортами
     "allowSyntheticDefaultImports": true //этот флаг позволяет использовать импорты без звездочек
   },
