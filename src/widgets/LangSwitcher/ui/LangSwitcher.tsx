@@ -11,7 +11,7 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
   const { t, i18n } = useTranslation();
   const toggleLang = async () => {
     i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru");
-  };
+  };//из библиотеки i18n достаем метод changeLanguage и в нем меняем язык везде по сайту
 
   return (
     <Button

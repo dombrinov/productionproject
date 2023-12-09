@@ -12,7 +12,7 @@ export const PageError = ({ className }: PageErrorProps) => {
 
   const reloadPage = () => {
     location.reload();
-  };
+  };//у объекта location вызываем метод reload для обновления страницы по кнопке
 
   return (
     <div className={classNames(classes.PageError, {}, [className])}>
