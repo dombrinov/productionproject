@@ -5,13 +5,14 @@ import classes from "./LangSwitcher.module.scss";
 
 interface LangSwitcherProps {
   className?: string;
+  short?: boolean;
 }
 
-export const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
   const { t, i18n } = useTranslation();
   const toggleLang = async () => {
     i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru");
-  };//из библиотеки i18n достаем метод changeLanguage и в нем меняем язык везде по сайту
+  }; //из библиотеки i18n достаем метод changeLanguage и в нем меняем язык везде по сайту
 
   return (
     <Button
@@ -19,7 +20,7 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
       className={classNames(classes.LangSwitcher, {}, [className])}
       onClick={toggleLang}
     >
-      {t("Язык")}
+      {t(short ? "Короткий язык" : "Язык")}
     </Button>
   );
 };

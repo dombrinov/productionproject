@@ -2,8 +2,8 @@ import classes from "./ThemeSwitcher.module.scss";
 import type { PropsWithChildren } from "react";
 import { useTheme } from "app/providers/ThemeProvider";
 import { classNames } from "shared/lib/classNames/classNames";
-import LightIcon from "../assets/icons/themelight.svg";
-import DarkIcon from "../assets/icons/themedark.svg";
+import LightIcon from "../../assets/themelight.svg";
+import DarkIcon from "../../assets/themedark.svg";
 import { Theme } from "app/providers/ThemeProvider";
 import { Button, ThemeButton } from "shared/ui/Button/Button";
 
