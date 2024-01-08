@@ -29,3 +29,4 @@ const diffDir = joinPath(lokiDir, "difference");
     })
   );
 })();
+//файл генерации скриншотных отчетов
