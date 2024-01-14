@@ -1,7 +1,6 @@
 import { Button } from "shared/ui/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { counterActions } from "../model/slice/counterSlice";
-import { StateSchema } from "app/providers/StoreProvider/config/StateSchema";
 import { getCounterValue } from "../model/selectors/getCounterValue/getCounterValue";
 import { useTranslation } from "react-i18next";
 
@@ -16,7 +15,8 @@ export const Counter = ({ className }: CounterProps) => {
 
   const increment = () => {
     dispatch(counterActions.increment());
-  };
+  };//в этой функции, через диспатч обращаемся к counterActions(редюсерам в Slice)? в них уже есть логика
+  
   const decrement = () => {
     dispatch(counterActions.decrement());
   };

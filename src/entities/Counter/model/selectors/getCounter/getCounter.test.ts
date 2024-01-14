@@ -9,5 +9,5 @@ describe("getCounter", () => {
     };
     expect(getCounter(state as StateSchema)).toEqual({ value: 10 });
   });
-});
+});//deepPartial - обьявляем только кусок стейта, а именно ОБЬЕКТ с полем value. Сам тест ожидает возвращение участка, который отвечает за счетчик
 

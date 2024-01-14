@@ -16,7 +16,7 @@ export const counterSlice = createSlice({
       state.value -= 1;
     },
   },
-});
+});//в редюсерах лежат функции(экшены), которые можно потом использовать в любом месте аpp
 
 export const { actions: counterActions } = counterSlice;
 

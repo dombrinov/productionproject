@@ -12,7 +12,7 @@ export const App = () => {
   const { theme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className={classNames("app", {}, [theme])}>
+    <div className={classNames("app", {}, [])}>
       <Suspense fallback="">
         <NavBar />
         <Button onClick={() => setIsOpen(true)}>toggle</Button>

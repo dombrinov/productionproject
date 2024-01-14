@@ -12,5 +12,6 @@ interface StoreProviderProps {
 export const StoreProvider = (props: StoreProviderProps) => {
   const { children, initialState } = props;
   const store = createReduxStore(initialState as StateSchema);
+  
   return <Provider store={store}> {children}</Provider>;
-};
+};//все приложение в app оборачивается в провайдер, у которого есть стор, сам провайдер находится в компоненте storeprovider

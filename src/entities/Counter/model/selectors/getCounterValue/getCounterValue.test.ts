@@ -9,4 +9,4 @@ describe("getCounterValue.test", () => {
     };
     expect(getCounterValue(state as StateSchema)).toEqual(10);
   });
-});
+});// здесь мы ожидаем, что вернется именно число 10, а не ОБЪЕКТ
